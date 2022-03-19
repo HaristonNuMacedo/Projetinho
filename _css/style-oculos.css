@@ -143,10 +143,11 @@ header .menu01 {
     border-bottom: 2px solid #ccc;
     text-decoration: none;
     color: #555;
+    font-size: 15px;
 
     min-width: 192px;
     height: 40px;
-    line-height: 35px;
+    line-height: 38px;
     text-align: center;
     display: inline-block;
 }
@@ -171,8 +172,8 @@ header .menu01 {
 .cybr-border07 img {
     position: relative;
     right: 15px;
-    width: 22px;
-    margin-bottom: 5px;
+    width: 20px;
+    margin-bottom: 4px;
 }
 
 

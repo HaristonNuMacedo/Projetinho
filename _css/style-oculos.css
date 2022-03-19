@@ -142,10 +142,11 @@ header .menu01 {
 
     border-bottom: 2px solid #ccc;
     text-decoration: none;
+    color: #555;
 
     min-width: 192px;
     height: 40px;
-    line-height: 45px;
+    line-height: 35px;
     text-align: center;
     display: inline-block;
 }
@@ -165,6 +166,13 @@ header .menu01 {
 .cybr-border07:before {
     background: var(--shadow-primary);
     
+}
+
+.cybr-border07 img {
+    position: relative;
+    right: 15px;
+    width: 22px;
+    margin-bottom: 5px;
 }
 
 

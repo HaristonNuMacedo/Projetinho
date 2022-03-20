@@ -282,7 +282,7 @@ header.rowT1 {
     height: 60px;
     background-color: #000;
     margin: 0px;
-    z-index: 1;
+    z-index: 20;
     display: flex;
 }
 
@@ -541,7 +541,34 @@ div.menu h1{
 
 div#sessao02 {
     position: relative;
+    border-top: 2px solid #fff;
 }
+
+div#sessao02 .tituloS2 {
+    position: absolute;
+    color: #FFF;
+    left: 41%;
+    z-index: 10;
+    padding: 10px 1px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 10px 10px #000;
+    display: inline-flex;
+    box-shadow: 10px 0px 0px rgba(255, 255, 255, 10);
+    overflow: hidden;
+    animation: textTyping 5s steps(100) infinite;
+}
+
+@keyframes textTyping {
+    0%, 90%, 100% {
+        width: 1px;
+    }
+
+    30%, 60% {
+        width: 230px;
+    }
+}
+     
 
 div#sessao02 section.principaisProdutos {
     display: flex;
@@ -605,6 +632,7 @@ div#sessao02 .containerSeg {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 25px;
 }
 
 

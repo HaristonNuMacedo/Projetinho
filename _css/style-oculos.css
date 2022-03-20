@@ -515,4 +515,238 @@ div.menu h1{
     color: #ffffff;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#sessao02 {
+    position: relative;
+}
+
+div#sessao02 section.principaisProdutos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #232323;
+    overflow: hidden;
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+
+div#sessao02 section.principaisProdutos span.ponto:nth-child(1) {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    clip-path: circle(5% at 10% 20%);
+}
+
+div#sessao02 section.principaisProdutos span.ponto:nth-child(2) {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    clip-path: circle(5% at 50% 85%);
+}
+
+div#sessao02 section.principaisProdutos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00b2f0;
+    clip-path: circle(55% at 100% -20%);
+}
+
+div#sessao02 section.principaisProdutos::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #910000;
+    clip-path: circle(35% at 0% 100%);
+}
+
+div#sessao02 .containerSeg {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+div#sessao02 .containerSeg .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+}
   
+div#sessao02 .containerSeg .card .imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: .5s ease-in-out;
+}
+
+div#sessao02 .containerSeg .card:hover .imgBx {
+    transform: translateY(-100px);
+}
+
+div#sessao02 .containerSeg .card .imgBx img {
+    max-width: 100%;
+    margin: 0 0 20px;
+    transition: .5s ease-in-out;
+}
+
+div#sessao02 .containerSeg .card:hover .imgBx img {
+    transform: translate(0px, -20px) rotate(-15deg) scale(1.2);
+}
+
+div#sessao02 .containerSeg .card .imgBx h2 {
+    color: #fff!important;
+    font-weight: 600;
+}
+
+div#sessao02 .containerSeg .card .contentBox {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s ease-in;
+    opacity: none;
+    visibility: hidden;
+}
+
+div#sessao02 .containerSeg .card:hover .contentBox {
+    opacity: 1;
+    transition: 0.5s ease-in;
+    visibility: visible;
+    transform: translateY(-25px);
+}
+
+div#sessao02 .containerSeg .card .contentBox .size,
+div#sessao02 .containerSeg .card .contentBox .color 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+div#sessao02 .containerSeg .card .contentBox .size h3,
+div#sessao02 .containerSeg .card .contentBox .color h3
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+div#sessao02 .containerSeg .card .contentBox .size span
+{
+    width: 26px; height: 26px;
+    text-align: center;
+    line-height: 24px;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: none;
+    cursor: pointer;
+}
+
+div#sessao02 .containerSeg .card .contentBox .size span:hover
+{
+    transition: .5s;
+    background-color: #00b2f0;
+}
+
+div#sessao02 .containerSeg .card .contentBox .color span
+{
+    width: 20px; height: 20px;
+    background-color: #f00;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+div#sessao02 .containerSeg .card .contentBox .color span:nth-child(2) {
+    background-color: #0004ff;
+}
+div#sessao02 .containerSeg .card .contentBox .color span:nth-child(3) {
+    background-color: #f00;
+}
+div#sessao02 .containerSeg .card .contentBox .color span:nth-child(4) {
+    background-color: #aaff00;
+}
+
+div#sessao02 .containerSeg .card .contentBox a {
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #fff;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+div#sessao02 .containerSeg .card .contentBox a:hover {
+    background: #00b2f0;
+}
+

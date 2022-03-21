@@ -577,16 +577,16 @@ div.menu h1{
 
 #sessao01 .loader h3 {
     color: #000;
-    animation: animate12 5s linear infinite;
+    animation: animate12 6s linear infinite;
     font-size: 1.85rem;
 }
 
 @keyframes animate12 {
-   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+   0%, 10.1%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
        text-shadow: none;
    } 
 
-   18.1%, 20.1%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+   10%, 18.1%, 20.1%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
         text-shadow: 0 0 10px #00b2f0,
             0 0 20px #00b2f0,
             0 0 40px #00b2f0,
@@ -878,7 +878,7 @@ div.menu h1{
 
 div#sessao02 {
     position: relative;
-    border-top: 2px solid #fff;
+    border-top: 4px solid #fff;
 }
 
 div#sessao02 .tituloS2 {
@@ -886,14 +886,14 @@ div#sessao02 .tituloS2 {
     color: #FFF;
     left: 41%;
     z-index: 10;
-    padding: 10px 1px;
+    padding: 10px 10px;
     text-align: center;
     font-size: 50px;
     text-shadow: 0 10px 10px #000;
     display: inline-flex;
     box-shadow: 10px 0px 0px rgba(255, 255, 255, 10);
     overflow: hidden;
-    animation: textTyping 4s steps(150) infinite;
+    /*animation: textTyping 4s steps(150) infinite;*/
 }
 
 @keyframes textTyping {

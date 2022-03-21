@@ -560,19 +560,49 @@ div.menu h1{
 #sessao01 .slogaEm {
     position: absolute;
     bottom: 100px;
-    right: 45%;
+    right: 41.5%;
 }
 
 #sessao01 .loader {
     position: relative;
     width: 400px;
     height: 100px;
-    background-color: #111153;
+    background-color: #0e1538;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .5s;
-    color: #fff;
+    animation: animate123 4s linear infinite;
+}
+
+#sessao01 .loader h3 {
+    color: #000;
+    animation: animate12 5s linear infinite;
+    font-size: 1.85rem;
+}
+
+@keyframes animate12 {
+   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+       text-shadow: none;
+   } 
+
+   18.1%, 20.1%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        text-shadow: 0 0 10px #00b2f0,
+            0 0 20px #00b2f0,
+            0 0 40px #00b2f0,
+            0 0 80px #00b2f0,
+            0 0 160px #00b2f0,
+            0 0 250px #00b2f0;
+   }
+}
+
+@keyframes animate123 {
+   100% {
+        box-shadow: 0 0 5px #00b2f0, 
+        0 0 25px #00b2f0, 
+        0 0 50px #00b2f0, 
+        0 0 100px #00b2f0;
+   }
 }
 
 #sessao01 .loader:hover {
@@ -591,11 +621,37 @@ div.menu h1{
 
 #sessao01 .loader span:nth-child(1) {
     top: 0;
-    left: 0;
-    width: 100%;
+    left: -75%;
+    width: 150%;
     height: 5px;
     background: linear-gradient(90deg, transparent, #00b2f0);
+    animation: animate1 2s;
 }
+
+#sessao01 .loader span:nth-child(3) {
+    bottom: 0;
+    right: -75%;
+    width: 150%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #00b2f0);
+}
+
+#sessao01 .loader span:nth-child(2) {
+    top: -150%;
+    right: 0;
+    width: 5px;
+    height: 200%;
+    background: linear-gradient(180deg, transparent, #00b2f0);
+}
+
+#sessao01 .loader span:nth-child(4) {
+    top: 50%;
+    left: 0;
+    width: 5px;
+    height: 200%;
+    background: linear-gradient(360deg, transparent, #00b2f0);
+}
+
 
 
 #sessao01 div.box {

@@ -877,6 +877,134 @@ div.menu h1{
 
 
 
+
+
+
+
+
+.divProducto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(#fff 40%, #00b2f0 50%, #00b2f0 50%,#fff 60%);
+    height: 500px;
+}
+
+.divProducto #cardProduct {
+    position: relative;
+    width: 400px;
+    height: 380px;
+    background-color: #000;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.divProducto #cardProduct:hover {
+    width: 800px;
+}
+
+.divProducto #cardProduct .imgBox {
+    position: relative;
+    min-width: 400px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: .5s ease-in-out;
+}
+
+.divProducto #cardProduct .imgBox img {
+    max-width: 275px;
+    transition: .5s ease-in-out;
+}
+
+.divProducto #cardProduct:hover .imgBox img {
+    transform: rotate(-15deg) translate(-20px);
+}
+
+#cardProduct .detalhes {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #00b2f0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+
+#cardProduct:hover .detalhes {
+    left: 400px;
+}
+
+#cardProduct .detalhes::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #Fff;
+}
+
+#cardProduct .detalhes h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+#cardProduct .detalhes h3 span {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.78em;
+}
+
+#cardProduct .detalhes p {
+    color: #fff;
+    text-transform: none;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 div.divS2 {
     display: flex;
     justify-content: center;

@@ -941,18 +941,17 @@ div.menu h1{
     padding: 20px;
     z-index: 1;
     transition: .5s ease-in-out;
-    border-right: 2px solid #fff;
+    border-right: 4px solid #fff;
 }
 
 #cardProduct:hover .detalhes {
     left: 400px;
-    border-right: 0px solid #fff;
 }
 
 #cardProduct .detalhes::before {
     content: '';
     position: absolute;
-    right: -22px;
+    right: -24px;
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
@@ -1090,17 +1089,17 @@ div.menu h1{
 
 .divCoresProduto .containerCores .nav span.one,
 .divCoresProduto .containerCores .nav i.one {
-    background: #28e651;
+    background: #00b2f0;
 }
 
 .divCoresProduto .containerCores .nav span.two,
 .divCoresProduto .containerCores .nav i.two {
-    background: rgb(223, 51, 51);
+    background: #df3333;
 }
 
 .divCoresProduto .containerCores .nav span.three,
 .divCoresProduto .containerCores .nav i.three {
-    background: #00b2f0;
+    background: #28e651;
 }
 
 .divCoresProduto .containerCores .nav span.four,

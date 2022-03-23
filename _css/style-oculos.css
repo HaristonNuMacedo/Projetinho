@@ -883,19 +883,21 @@ div.menu h1{
 
 
 .divProducto {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     background: linear-gradient(#fff 40%, #00b2f0 50%, #00b2f0 50%,#fff 60%);
     height: 500px;
+    z-index: 10;
 }
 
 .divProducto #cardProduct {
     position: relative;
-    width: 400px;
+    width: 800px;
     height: 380px;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
     display: flex;
     overflow: hidden;
@@ -929,7 +931,7 @@ div.menu h1{
 
 #cardProduct .detalhes {
     position: absolute;
-    left: 0;
+    left: 20px;
     width: 400px;
     height: 100%;
     background-color: #00b2f0;
@@ -939,21 +941,37 @@ div.menu h1{
     padding: 20px;
     z-index: 1;
     transition: .5s ease-in-out;
+    border-right: 2px solid #fff;
 }
 
 #cardProduct:hover .detalhes {
     left: 400px;
+    border-right: 0px solid #fff;
 }
 
 #cardProduct .detalhes::before {
     content: '';
     position: absolute;
-    left: 0;
+    right: -22px;
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid #Fff;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #Fff;
+}
+
+#cardProduct .detalherHover {
+    position: absolute;
+    right: 10%;
+    top: 45%;
+    color: #FFF;
+    font-size: 26px;
+}
+
+#cardProduct .detalherHover small{
+    font-size: 26px;
+    color: #00b2f0;
+    text-shadow: 0px 5px 5px #000;
 }
 
 #cardProduct .detalhes h3 {
@@ -1005,13 +1023,142 @@ div.menu h1{
 
 
 
+.divCoresProduto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    height: 600px;
+}
+
+.divCoresProduto .containerCores {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 1366px;
+    height: 600px;
+}
+
+.divCoresProduto .containerCores img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+}
+
+.divCoresProduto .containerCores .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.divCoresProduto .containerCores .nav .caixaCores {
+    position: relative;
+    left: 250px;
+    top: 85px;
+    background-color: #fff;
+    z-index: 1;
+    width: 75px;
+    height: 220px;
+}
+
+
+
+.divCoresProduto .containerCores .nav span {
+    position: relative;
+    top: -125px;
+    left: 250px;
+    width: 30px;
+    height: 20px;
+    margin: 15px 0px;
+    background: #f00;
+    border-radius: 10%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.divCoresProduto .containerCores .nav span.active {
+    border: 2px solid #000;
+    transform: scale(1.2);
+}
+
+.divCoresProduto .containerCores .nav span.one,
+.divCoresProduto .containerCores .nav i.one {
+    background: #28e651;
+}
+
+.divCoresProduto .containerCores .nav span.two,
+.divCoresProduto .containerCores .nav i.two {
+    background: rgb(223, 51, 51);
+}
+
+.divCoresProduto .containerCores .nav span.three,
+.divCoresProduto .containerCores .nav i.three {
+    background: #00b2f0;
+}
+
+.divCoresProduto .containerCores .nav span.four,
+.divCoresProduto .containerCores .nav i.four {
+    background: #666;
+}
+
+.divCoresProduto .containerCores .nav span.active + i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+    mix-blend-mode: hue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 div.divS2 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     background: #232323;
-    border-top: 10px solid #232323;
 }
 
 div#sessao02 {
@@ -1020,6 +1167,7 @@ div#sessao02 {
     border-top: 0px solid #fff;
     z-index: 10;
     width: 1366px;
+    height: 800px;
 }
 
 div#sessao02 .tituloS2 {
@@ -1051,7 +1199,7 @@ div#sessao02 section.principaisProdutos {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 705px;
     background: #232323;
     overflow: hidden;
     padding: 100px 20px;
@@ -1088,7 +1236,7 @@ div#sessao02 section.principaisProdutos::before {
     width: 100%;
     height: 100%;
     background-color: #00b2f0;
-    clip-path: circle(45% at 100% -20%);
+    clip-path: circle(35% at 100% -20%);
 }
 
 div#sessao02 section.principaisProdutos::after {

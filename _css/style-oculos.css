@@ -1552,14 +1552,14 @@ article {
 footer {
     position: relative;
     background-color: #fff;
-    height: 250px;
+    height: 200px;
     margin: none;
     padding: none;
     border: none;
     justify-content: center;
     align-items: center;
     display: flex;
-    top: -50px;
+    top: -65px;
 }
 
 footer .footer {

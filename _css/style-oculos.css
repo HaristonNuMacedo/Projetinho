@@ -1032,6 +1032,21 @@ div.menu h1{
     font-size: 1em;
 }
 
+#cardProduct .detalhes .linkExtense {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    text-align: center;
+    width: 120px;
+    transition: 0.4s ease-in-out;
+}
+
+#cardProduct .detalhes .linkExtense:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 
 
 

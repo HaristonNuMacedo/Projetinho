@@ -672,6 +672,15 @@ div.menu h1{
     left: 25px;
 }
 
+#sessao01 div.box h2 {
+    font-size: 55px!important;
+}
+
+#sessao01 div.box img{
+    transform: rotate(-2deg);
+    z-index: 3;
+}
+
 #sessao01 div.box2 {
     position: absolute;
     top: 50px;

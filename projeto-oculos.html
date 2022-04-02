@@ -113,20 +113,40 @@
     </div>
 
     <div class="divCoresProduto">
-        <div class="containerCores">
-            <div class="nav">
-                <div class="caixaCores"></div>
-                <span class="one active" onclick="changeColor(event)"></span>
-                <i class="one"></i>
-                <span class="two" onclick="changeColor(event)"></span>
-                <i class="two"></i>
-                <span class="three" onclick="changeColor(event)"></span>
-                <i class="three"></i>
-                <span class="four" onclick="changeColor(event)"></span>
-                <i class="four"></i>
-                <img src="img/oculosPreview.png">
+        <article>
+            <input type="radio" name="switch-color" id="red">
+            <input type="radio" name="switch-color" id="cyan" checked>
+            <input type="radio" name="switch-color" id="lime">
+            <input type="radio" name="switch-color" id="two">
+            <input type="radio" name="switch-color" id="preto">
+            <div class="chart">
+                <div class="bar bar-75 white">
+                    <div class="face top">
+                        <div class="growing-bar"></div>
+                    </div>
+                    <div class="face side-0">
+                        <div class="growing-bar"></div>
+                    </div>
+                    <div class="face floor">
+                        <div class="growing-bar"></div>
+                    </div>
+                    <div class="face side-a"></div>
+                    <div class="face side-b"></div>
+                    <div class="face side-1">
+                        <div class="growing-bar"></div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <p>Paleta de cores</p>
+            <nav class="actionsButton">
+                <label for="red">Azul Oceano</label>
+                <label for="cyan">Azul Celeste</label>
+                <label for="lime">Cinza</label>
+                <label for="two">branco</label>
+                <label for="preto">Preto</label>
+            </nav>
+        </article>
     </div>
     <script>
         function changeColor(event) {

@@ -697,6 +697,13 @@ div.menu h1{
     box-shadow: -10px 10px 0px rgba(3, 3, 3, 0.4);
 }
 
+#sessao01 div.box2 span {
+    z-index: 5;
+    color: #fff;
+    transform: rotate(0deg);
+    font-size: 22px;
+}
+
 #sessao01 div.box3 {
     position: absolute;
     bottom: 50px;
@@ -710,6 +717,13 @@ div.menu h1{
     overflow: hidden;
     border-radius: 4px;
     box-shadow: 10px -10px 0px rgba(3, 3, 3, 0.4);
+}
+
+#sessao01 div.box3 span {
+    z-index: 5;
+    color: #fff;
+    transform: rotate(0deg);
+    font-size: 22px;
 }
 
 #sessao01 div.box4 {
@@ -728,6 +742,13 @@ div.menu h1{
     box-shadow: 10px 10px 0px rgba(3, 3, 3, 0.4);
 }
 
+#sessao01 div.box4 span {
+    z-index: 5;
+    color: #fff;
+    transform: rotate(0deg);
+    font-size: 22px;
+}
+
 #sessao01 div.box5 {
     position: absolute;
     bottom: 45px;
@@ -742,6 +763,13 @@ div.menu h1{
     border-radius: 8px;
     z-index: 1;
     box-shadow: -10px -10px 0px rgba(3, 3, 3, 0.4);
+}
+
+#sessao01 div.box5 span {
+    z-index: 5;
+    color: #fff;
+    transform: rotate(0deg);
+    font-size: 22px;
 }
 
 #sessao01 div.box::before {

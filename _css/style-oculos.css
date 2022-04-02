@@ -1364,9 +1364,9 @@ article {
   }
 
   article p {
-      font-size: 35px;
+      font-size: 25px;
       font-weight: 600;
-      text-shadow: 0 3px 3px #000;
+      text-shadow: 0 2px 2px #000;
       display: flex;
       justify-content: center;
       margin: 20px 0px;

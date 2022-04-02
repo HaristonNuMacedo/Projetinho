@@ -625,7 +625,7 @@ div.menu h1{
     left: -25%;
     width: 150%;
     height: 5px;
-    background: linear-gradient(90deg, transparent, #00b2f0);
+    background: linear-gradient(90deg, transparent, #0e1538);
     animation: animate1 2s;
 }
 
@@ -634,7 +634,7 @@ div.menu h1{
     right: -25%;
     width: 150%;
     height: 5px;
-    background: linear-gradient(270deg, transparent, #00b2f0);
+    background: linear-gradient(270deg, transparent, #0e1538);
 }
 
 #sessao01 .loader span:nth-child(2) {
@@ -642,7 +642,7 @@ div.menu h1{
     right: 0;
     width: 5px;
     height: 200%;
-    background: linear-gradient(180deg, transparent, #00b2f0);
+    background: linear-gradient(180deg, transparent, #0e1538);
 }
 
 #sessao01 .loader span:nth-child(4) {
@@ -650,7 +650,7 @@ div.menu h1{
     left: 0;
     width: 5px;
     height: 200%;
-    background: linear-gradient(360deg, transparent, #00b2f0);
+    background: linear-gradient(360deg, transparent, #0e1538);
 }
 
 
@@ -1375,7 +1375,7 @@ article {
     justify-content: center;
     margin-bottom: 0;
     padding-bottom: 2em;
-    border-bottom: 1px dotted rgba(68, 68, 68, 0.4);
+    border-bottom: 2px dotted rgba(68, 68, 68, 0.4);
   }
   
   label {
@@ -1385,9 +1385,10 @@ article {
     cursor: pointer;
     transition: all 0.15s ease-in-out;
     color: #0a4069;
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 0;
     flex: 1;
+    text-align: center;
   }
 
   label:first-child {

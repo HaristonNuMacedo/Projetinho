@@ -1364,7 +1364,9 @@ article {
   }
 
   article p {
-      font-size: 22px;
+      font-size: 35px;
+      font-weight: 600;
+      text-shadow: 0 3px 0px #000;
       display: flex;
       justify-content: center;
       margin: 20px 0px;
@@ -1400,6 +1402,11 @@ article {
     margin-right: 0;
     border-radius: 0 0.4em 0.4em 0;
   }
+
+  .radio-2 {
+    display: none;
+}
+
 
 .chart {
     font-size: 1em;
@@ -1519,22 +1526,4 @@ article {
     width: 75%;
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-.radio-2 {
-    display: none;
-    width: 100%;
-}
 

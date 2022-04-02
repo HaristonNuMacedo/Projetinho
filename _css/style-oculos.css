@@ -1457,10 +1457,6 @@ article {
     box-shadow: 0em 0em 2em rgba(14, 21, 56);
   }
 
-  input[id="red"]:checked ~ label:nth-child(1) {
-      background-color: #0e1538;
-  }
-  
   .bar.cyan .side-a, input[id="cyan"]:checked ~ .chart .side-a,
   .bar.cyan .growing-bar,
   input[id="cyan"]:checked ~ .chart .growing-bar {

@@ -625,7 +625,7 @@ div.menu h1{
     left: -25%;
     width: 150%;
     height: 5px;
-    background: linear-gradient(90deg, transparent, #0e1538);
+    background: linear-gradient(90deg, transparent, #00b2f0);
     animation: animate1 2s;
 }
 
@@ -634,7 +634,7 @@ div.menu h1{
     right: -25%;
     width: 150%;
     height: 5px;
-    background: linear-gradient(270deg, transparent, #0e1538);
+    background: linear-gradient(270deg, transparent, #00b2f0);
 }
 
 #sessao01 .loader span:nth-child(2) {
@@ -642,7 +642,7 @@ div.menu h1{
     right: 0;
     width: 5px;
     height: 200%;
-    background: linear-gradient(180deg, transparent, #0e1538);
+    background: linear-gradient(180deg, transparent, #00b2f0);
 }
 
 #sessao01 .loader span:nth-child(4) {
@@ -650,7 +650,7 @@ div.menu h1{
     left: 0;
     width: 5px;
     height: 200%;
-    background: linear-gradient(360deg, transparent, #0e1538);
+    background: linear-gradient(360deg, transparent, #00b2f0);
 }
 
 
@@ -897,7 +897,7 @@ div.menu h1{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: linear-gradient(#fff 40%, #00b2f0 50%, #00b2f0 50%,#fff 60%);
+    background: linear-gradient(#fff 35%, #0e1538 50%, #0e1538 50%,#fff 65%);
     height: 500px;
     z-index: 10;
 }
@@ -971,7 +971,7 @@ div.menu h1{
 #cardProduct .detalherHover {
     position: absolute;
     right: 10%;
-    top: 45%;
+    top: 44%;
     color: #FFF;
     font-size: 26px;
 }
@@ -1400,7 +1400,7 @@ article {
     margin-right: 0;
     border-radius: 0 0.4em 0.4em 0;
   }
-  
+
 .chart {
     font-size: 1em;
     perspective: 1000px;
@@ -1494,7 +1494,7 @@ article {
   .bar.two .side-a, input[id="two"]:checked ~ .chart .side-a,
   .bar.two .growing-bar,
   input[id="two"]:checked ~ .chart .growing-bar {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
   }
   .bar.two .side-0 .growing-bar, input[id="two"]:checked ~ .chart .side-0 .growing-bar {
     box-shadow: -0.5em -1.5em 4em rgb(255, 255, 255);
@@ -1520,4 +1520,21 @@ article {
   }
   
 
+
+
+
+
+
+
+
+
+
+
+
   
+
+.radio-2 {
+    display: none;
+    width: 100%;
+}
+

@@ -249,7 +249,7 @@ header .menu02 {
 header .menu02 #logoPrincipal {
     display: inline-flex;
     margin-top: 0px;
-    margin-left: 120px;
+    margin-left: 6%;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -1544,19 +1544,19 @@ article {
   .bar.lime .side-a, input[id="lime"]:checked ~ .chart .side-a,
   .bar.lime .growing-bar,
   input[id="lime"]:checked ~ .chart .growing-bar {
-    background-color: rgb(170, 170, 170, 0.4);
+    background-color: rgb(136, 136, 136, 0.4);
   }
   .bar.lime .side-0 .growing-bar, input[id="lime"]:checked ~ .chart .side-0 .growing-bar {
-    box-shadow: -0.5em -1.5em 4em rgb(170, 170, 170);
+    box-shadow: -0.5em -1.5em 4em rgb(136, 136, 136);
   }
   .bar.lime .floor .growing-bar, input[id="lime"]:checked ~ .chart .floor .growing-bar {
-    box-shadow: 0em 0em 2em rgb(170, 170, 170);
+    box-shadow: 0em 0em 2em rgb(136, 136, 136);
   }
 
   .bar.two .side-a, input[id="two"]:checked ~ .chart .side-a,
   .bar.two .growing-bar,
   input[id="two"]:checked ~ .chart .growing-bar {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.4);
   }
   .bar.two .side-0 .growing-bar, input[id="two"]:checked ~ .chart .side-0 .growing-bar {
     box-shadow: -0.5em -1.5em 4em rgb(255, 255, 255);

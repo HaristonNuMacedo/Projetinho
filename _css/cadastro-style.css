@@ -60,7 +60,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 65vh;
+    min-height: 80vh;
     background-color: #03071b;
 }
 
@@ -92,6 +92,14 @@ nav {
     transition: .5s;
 }
 
+.container .row100 .col-2 {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 70px 0 10px;
+    transition: .5s;
+}
+
 .container .row100 .inputBox {
     position: relative;
     width: 100%;
@@ -113,6 +121,41 @@ nav {
     color: #000;
 }
 
+.container .row100 .inputBox select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 15px;
+    z-index: 1;
+    color: #000;
+
+    cursor: pointer;
+	-webkit-appearance:none; 
+	background: transparent url("../img/arrow-down-sign-to-navigate.png") 95% 50% no-repeat;
+    background-size: 24px;
+}
+
+.container .row100 .inputBox select:hover {
+    border: none;
+    background: #00b2f0 url("../_img/arrow-down-sign-to-navigate.png") 95% 50% no-repeat;
+    background-size: 24px;
+    outline: none;
+    box-shadow: none;
+}
+
+.container .row100 .inputBox select:focus {
+    background: #00b2f0 url("../_img/arrow-down-sign-to-navigate.png") 95% 50% no-repeat;
+    background-size: 24px;
+    border: none;
+	outline: none;
+    box-shadow: none;
+}
+
 .container .row100 .inputBox .text {
     position: absolute;
     top: 0;
@@ -131,6 +174,14 @@ nav {
     left: -10px;
 }
 
+.container .row100 .inputBox select:focus + .text,
+.container .row100 .inputBox select:valid + .text
+{
+    top: -35px;
+    left: 0px;
+}
+
+
 .container .row100 .inputBox .line {
     position: absolute;
     bottom: 0;
@@ -148,6 +199,13 @@ nav {
     height: 100%;
 }
 
+.container .row100 .inputBox select:focus ~ .line,
+.container .row100 .inputBox select:valid ~ .line
+{
+    height: 100%;
+}
+
+
 input[type='submit'] {  
     cursor: pointer;
     outline: none;
@@ -159,8 +217,25 @@ input[type='submit'] {
     border: 1px solid #00b2f0;
 }
 
+input[type='submit']#efetuarLogin {  
+    cursor: pointer;
+    outline: none;
+    padding: 10px 35px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 1px solid #00b2f0;
+}
+
 input[type='submit']:hover {
     border: 1px solid #Fff;
-    color: #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+input[type='submit']#efetuarLogin:hover {
+    background-color: #00b2f0;
+    color: #000;
 }
 

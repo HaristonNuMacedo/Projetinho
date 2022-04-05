@@ -38,7 +38,7 @@
                 <div class="col">
                     <div class="inputBox">
                         <input type="text" name="" required="required">
-                        <span class="text">Nome Completo</span>
+                        <span class="text">Nome Completo*</span>
                         <span class="line"></span>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                 <div class="col">
                     <div class="inputBox">
                         <input type="text" name="" required="required">
-                        <span class="text">E-mail</span>
+                        <span class="text">E-mail*</span>
                         <span class="line"></span>
                     </div>
                 </div>
@@ -56,15 +56,15 @@
                 <div class="col">
                     <div class="inputBox">
                         <input type="text" name="" id="telefone" required="required">
-                        <span class="text" id="telefone">Telefone</span>
+                        <span class="text" id="telefone">Telefone*</span>
                         <span class="line" id="telefone"></span>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span class="text">Senha</span>
+                        <input type="password" name="" required="required">
+                        <span class="text">Senha*</span>
                         <span class="line"></span>
                     </div>
                 </div>
@@ -72,7 +72,36 @@
 
             <div class="row100">
                 <div class="col">
-                <input type="submit" value="Realizar cadastro">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Nacionalidade*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="inputBox">
+                        <Select>
+                            <option>...</option>
+                            <option>Heterosexual</option>
+                            <option>Homosexual</option>
+                            <option>Bissexual</option>
+                            <option>Pansexual</option>
+                            <option>Prefiro não dizer...</option>
+                        </Select>
+                        <span class="text">Gênero*</span>
+                        <span class="line" id="line02"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row100">
+                <div class="col">
+                    <input type="submit" value="Realizar cadastro">
+                </div>
+
+                <div class="col">
+                    <input type="submit" id="efetuarLogin" value="Efetuar Login">
                 </div>
             </div>
         </div>

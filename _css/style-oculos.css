@@ -54,6 +54,11 @@ header .menu01 {
     border: 1px solid transparent;
 }
 
+#container a {
+    color: #333;
+    text-decoration: none;
+}
+
 .cybr-border {
     --shadow-primary: #fff;
 
@@ -1506,6 +1511,7 @@ article {
   .bar .top {
     transform: rotateX(0deg) rotateY(0) translateX(0em) translateY(4em) translateZ(2em);
   }
+
   .bar .floor {
     box-shadow: 0 0.1em 0.6em rgba(0, 0, 0, 0.3), 0.6em -0.5em 3em rgba(0, 0, 0, 0.3), 1em -1em 8em #fefefe;
   }
@@ -1525,6 +1531,7 @@ article {
   .bar.red .side-0 .growing-bar, input[id="red"]:checked ~ .chart .side-0 .growing-bar {
     box-shadow: -0.5em -1.5em 4em rgba(14, 21, 56);
   }
+
   .bar.red .floor .growing-bar, input[id="red"]:checked ~ .chart .floor .growing-bar {
     box-shadow: 0em 0em 2em rgba(14, 21, 56);
   }

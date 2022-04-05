@@ -217,7 +217,7 @@ input[type='submit'] {
     border: 1px solid #00b2f0;
 }
 
-input[type='submit']#efetuarLogin {  
+a input[type='submit']#efetuarLogin {  
     cursor: pointer;
     outline: none;
     padding: 10px 35px;

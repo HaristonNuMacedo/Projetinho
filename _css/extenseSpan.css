@@ -54,6 +54,11 @@ header .menu01 {
     border: 1px solid transparent;
 }
 
+#container a {
+    color: #333;
+    text-decoration: none;
+}
+
 .cybr-border {
     --shadow-primary: #fff;
 

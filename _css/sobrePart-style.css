@@ -54,6 +54,11 @@ header .menu01 {
     border: 1px solid transparent;
 }
 
+#container a {
+    color: #333;
+    text-decoration: none;
+}
+
 .cybr-border {
     --shadow-primary: #fff;
 
@@ -674,7 +679,12 @@ div.menu h1{
 }
 
 #tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(5) {
-    height: 275px;
+    background: transparent url("../_img/alphabet.png") 94% 50% no-repeat;
+    background-size: 24px;
+}
+
+#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(6) {
+    height: 375px;
     cursor: context-menu;
 }
 
@@ -713,7 +723,9 @@ div.menu h1{
 #tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(1),
 #tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(2),
 #tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(3),
-#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(4) {
+#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(4),
+#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(5)
+{
     background: #00b2f0;
     width: 350px!important;
 }
@@ -782,4 +794,145 @@ div.menu h1{
     font-size: 16px;
     margin-left: 15px;
     color: #aaa;
+    text-align: justify;
 }
+
+#sobre {
+    margin-left: -50px;
+    font-size: 25px;
+}
+
+#logoPrincipal2 {
+    display: inline-flex;
+    margin-top: 0px;
+    margin-left: -50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#logoPrincipal2 a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    cursor: text;
+}
+
+#logoPrincipal2 a h2 {
+    margin-top: 6px;
+}
+
+#logoPrincipal2 a img {
+    width: 40px;
+    height: 50px;
+    transform: rotate(-1deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RODAPÉ DO SITE COM ICONS */
+footer {
+    position: relative;
+    background-color: #fff;
+    height: 200px;
+    margin: none;
+    padding: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 75px;
+}
+
+footer .footer {
+    width: 1366px;
+}
+
+footer div.finish-index{
+    position: relative;
+    width: 80%;
+    border-bottom: 3px solid #000;
+    top: 0px;
+    left: 10%;
+}
+
+footer div.icons {
+    position: relative;
+    top: 5px;
+    left: 15px;
+    height: 50px;
+}
+
+footer div.icons a {
+    text-decoration: none;
+}
+
+footer div.icons svg.bi-facebook {
+    margin-right: 10px;
+    color: #000;
+}
+
+footer div.icons svg.bi-facebook:hover {
+    color: #0a328f;
+}
+
+footer div.icons svg.bi-instagram:hover {
+    color: #e1306c;
+}
+
+footer div.copyright{
+    position: relative;
+    top: 40px;
+    left: 10%;
+    color: #000;
+    width: 500px;
+    font-family: 'Calibri';
+    font-size: 18px
+}
+
+footer div.termos-licencas {
+    position: relative;
+    display: inline-block;
+    top: 60px;
+    left: 10%;
+    color: #000;
+    font-family: 'Calibri';
+}
+
+footer div a{
+    margin-right: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+

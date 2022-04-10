@@ -564,222 +564,229 @@ div.menu h1{
 
 
 
-.sobrePartnerT {
-    background-color: #0e1538;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Pcub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+#classCubo {
+    position: relative;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#tabelaSobre {
-    display: flex;
+  .scene {
+    width: 300px;
+    height: 150px;
+    border: 0px solid #CCC;
+    margin: 80px;
+    perspective: 400px;
+  }
+  
+  .box {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(0px);
+    transition: transform 1s;
+  }
+  
+  .box.show-front  { transform: translateZ( -50px) rotateY(   0deg); }
+  .box.show-back   { transform: translateZ( -50px) rotateY(-180deg); }
+  .box.show-right  { transform: translateZ(-150px) rotateY( -90deg); }
+  .box.show-left   { transform: translateZ(-150px) rotateY(  90deg); }
+  .box.show-top    { transform: translateZ(0px) rotateX( -30deg) rotateY( 30deg); }
+  .box.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
+  
+  
+  .box__face {
+    position: absolute;
+    border: 0px solid black;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .box__face--front,
+  .box__face--back {
+    width: 300px;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .box__face--front {
+      font-size: 25px;
+  }
+  
+  .box__face--right,
+  .box__face--left {
+    width: 100px;
+    height: 150px;
+    left: 100px;
+    line-height: 150px;
+  }
+  
+  .box__face--top,
+  .box__face--bottom {
+    width: 300px;
+    height: 100px;
+    top: 0px;
+    bottom: 0;
+    line-height: 100px;
+  }
+
+  .box__face--top {
+      top: 50px;
+  }
+  
+  .box__face--front  { background: linear-gradient(#151515,#0a328f); }
+  .box__face--right  { background: linear-gradient(#151515,#0a328f); }
+  .box__face--back   { background: linear-gradient(#151515,#0a328f); }
+  .box__face--left   { background: linear-gradient(#151515,#0a328f); }
+  .box__face--top    { background: linear-gradient(#0a328f); }
+  .box__face--bottom { background: linear-gradient(#0a328f,#0a328f); }
+  
+  .box__face--front  { transform: rotateY(  0deg) translateZ( 50px); }
+  .box__face--back   { transform: rotateY(180deg) translateZ( 50px); }
+  
+  .box__face--right  { transform: rotateY( 90deg) translateZ(150px); }
+  .box__face--left   { transform: rotateY(-90deg) translateZ(150px); }
+  
+  .box__face--top    { transform: rotateX( 90deg) translateZ(100px); }
+  .box__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+  
+  label { margin-right: 10px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* RODAPÉ DO SITE COM ICONS */
+ footer {
+    position: relative;
+    background-color: #fff;
+    height: 200px;
+    margin: none;
+    padding: none;
+    border: none;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    background-color: #0e1538;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 75px;
+}
+
+footer .footer {
     width: 1366px;
 }
 
-#tabes{
-    margin-top: 0px;
-    margin-bottom: 0;
-} 
-
-#tabes .tituloPrinc {
-    text-align: center;
+footer div.finish-index{
     position: relative;
-    margin-bottom: 80px;
-    padding: 10px 150px;
+    width: 80%;
+    border-bottom: 3px solid #000;
+    top: 0px;
+    left: 10%;
 }
 
-#tabes .tituloPrinc div:nth-child(1) {
-    color: #fff;
-    font-size: 36px;
-    font-weight: 500;
-    display: block;
-    padding: 0px;
-    margin-bottom: 15px;
-}
-
-#tabes .tituloPrinc div:nth-child(2) {
-    color: #aaa;
-    font-size: 16px;
-    line-height: 25px;
-}
-
-#tabes.ui-tabs-vertical {
+footer div.icons {
     position: relative;
-    width: 100%;
-    margin-left: 0%;
-    height: 900px;
-    background-color: #0e1538;
-    border: none;
+    top: 5px;
+    left: 15px;
+    height: 50px;
 }
 
-#tabes.ui-tabs-vertical .ui-tabs-nav{
-    display: inline-block;
-    background: none;
-    border: none;
-    margin-top: 25px;
-    margin-left: 10px;
-}
-
-        /*Jogando o conteúdo do menu para o 
-            final com o limite determinado no tamanho do menu */
-.ui-tabs .ui-tabs-nav li {
-    list-style: none;
-    position: relative;
-    top: 0;
-    margin: 0px 0px!important;
-    border-bottom-width: 0;
-    padding: 0 50px!important;
-    white-space: normal!important;
-    width: 220px!important;
-    text-align: end;
-}
-
-
-#tabes.ui-tabs-vertical .ui-tabs-nav li{
-    border: 0px;
-    clear: left; /* deixa um embaixo do outro*/
-    margin-bottom: -2px;
-    outline: none;
-    padding: 0px 0px;
-    border-radius: 0px;
-    cursor: pointer;
-    border-right: 2px solid #00b2f0;
-    z-index: 1;
-    width: 350px!important;
-}
-
-                /* ICONE PARA CADA ÍTEM NO MENU */ 
-#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(1) {
-    background: transparent url("../_img/search.png") 93% 50% no-repeat;
-    background-size: 16px;
-}
-
-#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(2) {
-    background: transparent url("../_img/calendarPerson.png") 94.5% 50% no-repeat;
-    background-size: 24px;
-}
-
-#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(3) {
-    background: transparent url("../_img/open-book.png") 96% 50% no-repeat;
-    background-size: 32px;
-}
-
-#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(4) {
-    background: transparent url("../_img/alphabet.png") 94% 50% no-repeat;
-    background-size: 24px;
-}
-
-#tabes.ui-tabs-vertical .ui-tabs-nav li:nth-child(5) {
-    height: 275px;
-    cursor: context-menu;
-}
-
-
-
-
-#tabes.ui-tabs-vertical .ui-tabs-nav li a{
-    width: 350px;
-    display: block;
-    outline: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: -25px;
-    padding-right: 50px!important;
-    padding: 7px;
-    margin-right: 50px!important;
-    line-height: 30px;
+footer div.icons a {
     text-decoration: none;
 }
 
-#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active{
-    margin-bottom: -2px;
-    outline: none;
-    width: 420px;
-    background-color: transparent;
-    border-right: 3px solid #fff;
-    cursor: pointer!important; 
-}
-
-
-
-                /* ICONE PARA CADA ÍTEM NO MENU */  
-
-#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(1),
-#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(2),
-#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(3),
-#tabes.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:nth-child(4) {
-    background: #00b2f0;
-    width: 350px!important;
-}
-
-
-.ui-tabs-active a{
-    color: #fff!important;
-}
-
-.ui-tabs-vertical .ui-tabs-panel {
-    float: right;
-    width: 70%;
-    padding: 2px;
-    margin-top: 0px;
-    color: #fff;
-}
-
-.ui-tabs-vertical .ui-tabs-panel .lado01 {
-    float: left;
-    width: 65%;
-    padding: 2px;
-    display: inline-flex;
-}
-
-.ui-tabs-vertical .ui-tabs-panel .lado01 img {
-    width: 525px;
-    z-index: 1;
-}
-
-.ui-tabs-vertical .ui-tabs-panel .lado02 {
-    padding: 0px;
-    margin-right: 80px;
-    margin-left: 50px;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.ui-tabs-vertical .ui-tabs-panel .lado02 .botaoInscreva {
-    float: left;
-
-    border: 1px solid #aaa;
-    text-decoration: none;
-    margin-top: 15px;
-    padding: 5px 15px;
-    cursor: pointer;
-    background: transparent;
-    color: #Aaa;
-}
-
-.ui-tabs-vertical .ui-tabs-panel .lado02 .botaoInscreva:hover {
-    background: #00b2f0;
-    border: 1px solid #00b2f0;
+footer div.icons svg.bi-facebook {
+    margin-right: 10px;
     color: #000;
 }
 
-.ui-tabs-vertical .ui-tabs-panel .lado02 span {
-    font-size: 20px;
-    text-transform: uppercase;
-    line-height: 40px;
-    font-weight: 500;
-    color: #fff;
-    margin-left: -20px;
+footer div.icons svg.bi-facebook:hover {
+    color: #0a328f;
 }
 
-.ui-tabs-vertical .ui-tabs-panel .lado02 p {
-    font-size: 16px;
-    margin-left: 15px;
-    color: #aaa;
+footer div.icons svg.bi-instagram:hover {
+    color: #e1306c;
 }
+
+footer div.copyright{
+    position: relative;
+    top: 40px;
+    left: 10%;
+    color: #000;
+    width: 500px;
+    font-family: 'Calibri';
+    font-size: 18px
+}
+
+footer div.termos-licencas {
+    position: relative;
+    display: inline-block;
+    top: 60px;
+    left: 10%;
+    color: #000;
+    font-family: 'Calibri';
+}
+
+footer div a{
+    margin-right: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+

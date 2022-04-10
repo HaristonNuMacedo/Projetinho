@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem vindo a Partnership</title>
-    <link rel="stylesheet" href="_css/style-oculos.css">
+    <title>Extense Span</title>
+
+    <link rel="stylesheet" href="_css/extenseSpan.css">
     <link rel="stylesheet" href="_css/bootstrap.css"/>
     <link rel="stylesheet" href="_css/bootstrap.min.css"/>
-
     <link rel="sorcut icon" href="img/logoPartnership.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
-
 </head>
 <body>
-    
     <header>
         <div class="menu01">
             <div class="divMenu01">
@@ -43,7 +41,7 @@
                         <h1></h1>
                         <ul>
                             <div class="dropdown">
-                                <li><a href="projeto-oculos.html" class="btn-line" id="btn-line1" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Home</a></li>
+                                <li><a href="projeto-oculos.html" class="btn-line" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Home</a></li>
                             </div>
         
                             <div class="dropdown">
@@ -55,7 +53,7 @@
                             </div>
 
                             <div class="dropdown">
-                                <li><a href="extenseSpan.html" class="btn-line" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Extense Span</a></li>
+                                <li><a href="extenseSpan.html" class="btn-line" id="btn-line1" onclick=" toggMenu()"><span></span><span></span><span></span><span></span>Extense Span</a></li>
                             </div>
         
                             <div class="dropdown">
@@ -82,171 +80,63 @@
                 </div>
             </header>
         </section>
- 
     </header>
 
-    <div class="divS01">
-        <section id="sessao01">
-            <div class="box">
-                <h2>Partnership</h2>
-            </div>
-
-            <div class="slogaEm">
-                <div class="loader">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <h3>Domine a sua perspectiva!</h3>
+    <section class="Pcub">
+        <div id="classCubo">
+            <div class="scene">
+                <div class="box">
+                    <div class="box__face box__face--front">Extense Span</div>
+                    <div class="box__face box__face--back"></div>
+                    <div class="box__face box__face--right"></div>
+                    <div class="box__face box__face--left"></div>
+                    <div class="box__face box__face--top">Partnership</div>
+                    <div class="box__face box__face--bottom">Partnership</div>
                 </div>
-            </div>  
-
-            <div class="box2"><span>Qualidade</span></div>
-            <div class="box3"><span>Conforto</span></div>
-            <div class="box4"><span>Tecnologia</span></div>
-            <div class="box5"><span>Transparência</span></div>
-        </section>
-    </div>
-
-    <div class="divProducto">
-        <div id="cardProduct">
-            <div class="imgBox">
-                <img src="img/L2218_Profile-317_R$655,00.png">
             </div>
-            <div class="detalhes">
-                <h3>Uma nova era<br><span>com melhor perspectiva</span></h3>
-                <p>Produto que irá proporcionar um novo ciclo para que possa se tonar cada vez melhor. 
-                    Um novo projeto em andamento, um futuro promissor para a sua visão.
-                </p>
-                <a href="#" class="linkExtense">Saiba Mais</a>
-            </div>
-            <div class="detalherHover">Detalhes <small>Extense Span</small></div>
+
+            <p class="radio-group">
+                <label>
+                <input type="radio" name="rotate-cube-side" value="front" /> front
+                </label>
+                <label>
+                <input type="radio" name="rotate-cube-side" value="right" /> right
+                </label>
+                <label>
+                <input type="radio" name="rotate-cube-side" value="back" /> back
+                </label>
+                <label>
+                <input type="radio" name="rotate-cube-side" value="left" /> left
+                </label>
+                <label>
+                <input type="radio" name="rotate-cube-side" value="top" checked /> top
+                </label>
+                <label>
+                <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+                </label>
+            </p>
         </div>
-    </div>
+    </section>
 
-    <div class="divCoresProduto">
-        <article>
-            <input type="radio" name="switch-color" class="radio-2" id="red" checked>
-            <input type="radio" name="switch-color" class="radio-2" id="cyan">
-            <input type="radio" name="switch-color" class="radio-2" id="lime">
-            <input type="radio" name="switch-color" class="radio-2" id="two">
-            <input type="radio" name="switch-color" class="radio-2" id="preto">
-
-            <div class="chart">
-                <div class="bar bar-75 white">
-                    <div class="face top">
-                        <div class="growing-bar"></div>
-                    </div>
-                    <div class="face side-0">
-                        <div class="growing-bar"></div>
-                    </div>
-                    <div class="face floor">
-                        <div class="growing-bar"></div>
-                    </div>
-                    <div class="face side-a"></div>
-                    <div class="face side-b"></div>
-                    <div class="face side-1">
-                        <div class="growing-bar"></div>
-                    </div>
-                </div>
-            </div>
-
-            <p>Paleta de cores do produto</p>
-            <nav class="actionsButton">
-                <label for="red">Azul Oceano</label>
-                <label for="cyan">Azul Celeste</label>
-                <label for="lime">Cinza ___</label>
-                <label for="two">branco ___</label>
-                <label for="preto">Preto ___</label>
-            </nav>
-        </article>
-    </div>
     <script>
-        function changeColor(event) {
-            document.querySelectorAll('span.active').forEach(function(item){
-                item.classList.remove('active')
-            })
+        var box = document.querySelector('.box');
+        var radioGroup = document.querySelector('.radio-group');
+        var currentClass = '';
 
-            event.target.classList.add('active')
+        function changeSide() {
+        var checkedRadio = radioGroup.querySelector(':checked');
+        var showClass = 'show-' + checkedRadio.value;
+        if ( currentClass ) {
+            box.classList.remove( currentClass );
         }
-    </script>
+        box.classList.add( showClass );
+        currentClass = showClass;
+        }
+        // set initial side
+        changeSide();
 
-    <div class="divS2">
-        <div id="sessao02">
-            <section class="principaisProdutos">
-                <span class="ponto"></span> <span class="ponto"></span>
-                <div class="containerSeg">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/L2216_Profile-526-feminino_R$600,00.png">
-                            <h2>LACOSTE - L2216</h2>
-                        </div>
-                        <div class="contentBox">
-                            <div class="size">
-                                <h3>Tamanho :</h3>
-                                <span>P</span>
-                                <span>M</span>
-                                <span>G</span>
-                            </div>
-                            <div class="color">
-                                <h3>Cor :</h3>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#">Compre Agora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="containerSeg">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/angle-03-c-line-clhf16-eyewear-red-gold.png">
-                            <h2>C-LINE</h2>
-                        </div>
-                        <div class="contentBox">
-                            <div class="size">
-                                <h3>Tamanho :</h3>
-                                <span>P</span>
-                                <span>M</span>
-                                <span>G</span>
-                            </div>
-                            <div class="color">
-                                <h3>Cor :</h3>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#">Compre Agora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="containerSeg">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="img/L2218_Profile-317_R$655,00.png">
-                            <h2>LACOSTE - L2218</h2>
-                        </div>
-                        <div class="contentBox">
-                            <div class="size">
-                                <h3>Tamanho :</h3>
-                                <span>P</span>
-                                <span>M</span>
-                                <span>G</span>
-                            </div>
-                            <div class="color">
-                                <h3>Cor :</h3>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#">Compre Agora</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
+        radioGroup.addEventListener( 'change', changeSide );
+    </script>
 
     <footer>
         <div class="footer">
@@ -278,19 +168,5 @@
             </div>
         </div>
     </footer>
-
-    <script type="text/javascript">
-        window.addEventListener('scroll', function(){
-            const header = document.querySelector('header.rowT1');
-            header.classList.toggle("sticky", window.scrollY > 175);
-        });
-
-        function toggMenu(){
-            const menuToggle = document.querySelector('.menu');
-            const navigation = document.querySelector('ul');
-            menuToggle.classList.toggle('active');
-            navigation.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>

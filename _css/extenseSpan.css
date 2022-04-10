@@ -646,22 +646,13 @@ div.menu h1{
     display: block!important;
   }
 
-  label:first-child {
-    margin-left: 0;
-    border-radius: 0.4em 0 0 0.4em;
-  }
-
-  label:last-child {
-    margin-right: 0;
-    border-radius: 0 0.4em 0.4em 0;
-  }
 
   
   .box.show-front  { transform: translateZ( -50px) rotateY(   0deg); }
   .box.show-back   { transform: translateZ( -50px) rotateY(-180deg); }
   .box.show-right  { transform: translateZ(-150px) rotateY( -40deg); }
   .box.show-left   { transform: translateZ(-150px) rotateY(  40deg); }
-  .box.show-top    { transform: translateZ(0px) rotateX( -30deg) rotateY( 30deg); }
+  .box.show-top    { transform: translateZ(0px) rotateX( -50deg) rotateY( 20deg); }
   .box.show-bottom { transform: translateZ(-50px) rotateX(  60deg); }
   
   
@@ -679,6 +670,21 @@ div.menu h1{
     width: 300px;
     height: 150px;
     line-height: 150px;
+  }
+
+  .box__face--back{
+      line-height: 10px;
+      font-size: 4px;
+      padding: 10px;
+      padding-top: 50px;
+      text-align: justify;
+  }
+
+  .box__face--back img {
+      width: 20px;
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
   }
 
   .box__face--front {
@@ -700,6 +706,7 @@ div.menu h1{
     top: 0px;
     bottom: 0;
     line-height: 100px;
+    font-size: 18px;
   }
 
   .box__face--top {
@@ -710,7 +717,7 @@ div.menu h1{
   .box__face--right  { background: linear-gradient(#151515,#0a328f); }
   .box__face--back   { background: linear-gradient(#151515,#0a328f); }
   .box__face--left   { background: linear-gradient(#151515,#0a328f); }
-  .box__face--top    { background: linear-gradient(#0a328f); }
+  .box__face--top    { background: linear-gradient(#151515,#151515); }
   .box__face--bottom { background: linear-gradient(#0a328f,#0a328f); }
   
   .box__face--front  { transform: rotateY(  0deg) translateZ( 50px); }

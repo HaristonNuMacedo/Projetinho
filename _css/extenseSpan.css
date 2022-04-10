@@ -626,6 +626,36 @@ div.menu h1{
     transform: translateZ(0px);
     transition: transform 1s;
   }
+
+  .radio-group {
+    
+  }
+
+ label {
+    box-sizing: border-box;
+    padding: 0.5em 2em;
+    margin: 0.6em 0.2em;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    color: #0a4069;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    border-radius: 0;
+    flex: 1;
+    text-align: center;
+    display: block!important;
+  }
+
+  label:first-child {
+    margin-left: 0;
+    border-radius: 0.4em 0 0 0.4em;
+  }
+
+  label:last-child {
+    margin-right: 0;
+    border-radius: 0 0.4em 0.4em 0;
+  }
+
   
   .box.show-front  { transform: translateZ( -50px) rotateY(   0deg); }
   .box.show-back   { transform: translateZ( -50px) rotateY(-180deg); }

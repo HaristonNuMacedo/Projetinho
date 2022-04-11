@@ -84,17 +84,19 @@
 
     <section class="Pcub">
         <div id="classCubo">
+            <div class="cores">
+                <input type="button" id="botao1" value="Azul Oceano">
+                <input type="button" id="botao2" value="Azul Celeste">
+                <input type="button" id="botao3" value="Cinza">
+                <input type="button" id="botao4" value="Branco">
+                <input type="button" id="botao5" value="Preto">
+            </div>
+
             <div class="scene">
                 <div class="box">
-                    <div class="box__face box__face--front">Extense Span</div>
-                    <div class="box__face box__face--back">
-                        <p>Lorem ipsum integer mattis imperdiet in, scelerisque velit sollicitudin fermentum sagittis, torquent mollis 
-                        sit convallis. primis nisi nulla accumsan quisque ultrices lectus facilisis velit, enim dictumst arcu facilisis 
-                        vehicula varius bibendum, quisque nulla ultrices sodales sociosqu dictum pellentesque. lacinia netus facilisis tempus tortor 
-                        suspendisse lacus morbi rutrum hendrerit, mattis semper fames eget ultrices donec congue ullamcorper habitasse, leo porttitor 
-                        scelerisque pulvinar dictumst massa morbi phasellus. netus taciti in quam purus pharetra pellentesque class mattis, ornare 
-                        egestas curae odio vestibulum adipiscing lectus primis, velit nostra vulputate sem luctus nec neque. suscipit eget maecenas 
-                        ultrices aliquam a aliquam quam habitasse nam sem ac, eleifend faucibus dolor volutpat dictum suspendisse cubilia fusce ac pulvinar.</p>
+                    <div class="box__face box__face--front" id="faceFront">Extense Span</div>
+                    <div class="box__face box__face--back" id="faceBack">
+                        <p>Domine a sua perspectiva</p>
                         <br><img src="img/1200px-QR_code_for_mobile_English_Wikipedia.svg.jfif"></div>
                     <div class="box__face box__face--right"></div>
                     <div class="box__face box__face--left"></div>
@@ -177,5 +179,91 @@
             </div>
         </div>
     </footer>
+
+    <script>
+                
+        faceFront = document.querySelector('.box__face--front');
+        faceRight = document.querySelector('.box__face--right');
+        faceBack = document.querySelector('.box__face--back');
+        faceLeft = document.querySelector('.box__face--left');
+        faceTop = document.querySelector('.box__face--top');
+        faceBottom = document.querySelector('.box__face--bottom');
+        
+        function mudarCor(teste) {
+            faceFront.style.background = "linear-gradient(#151515, " + teste + ")";
+            faceRight.style.background = "linear-gradient(#151515, " + teste + ")";
+            faceBack.style.background = "linear-gradient(#151515, " + teste + ")";
+            faceLeft.style.background = "linear-gradient(#151515, " + teste + ")";
+            faceTop.style.background = "linear-gradient(#151515, #151515)";
+            faceBottom.style.background = "linear-gradient(" + teste + "," + teste + ")";
+        }
+        
+        function mudarCor2(teste2) {
+            faceFront.style.background = "linear-gradient(#151515, " + teste2 + ")";
+            faceRight.style.background = "linear-gradient(#151515, " + teste2 + ")";
+            faceBack.style.background = "linear-gradient(#151515, " + teste2 + ")";
+            faceLeft.style.background = "linear-gradient(#151515, " + teste2 + ")";
+            faceTop.style.background = "linear-gradient(#151515, #151515)";
+            faceBottom.style.background = "linear-gradient(" + teste2 + "," + teste2 + ")";
+        }
+
+        function mudarCor3(teste3) {
+            faceFront.style.background = "linear-gradient(#151515, " + teste3 + ")";
+            faceRight.style.background = "linear-gradient(#151515, " + teste3 + ")";
+            faceBack.style.background = "linear-gradient(#151515, " + teste3 + ")";
+            faceLeft.style.background = "linear-gradient(#151515, " + teste3 + ")";
+            faceTop.style.background = "linear-gradient(#151515, #151515)";
+            faceBottom.style.background = "linear-gradient(" + teste3 + "," + teste3 + ")";
+        }
+
+        function mudarCor4(teste4) {
+            faceFront.style.background = "linear-gradient(#151515, " + teste4 + ")";
+            faceRight.style.background = "linear-gradient(#151515, " + teste4 + ")";
+            faceBack.style.background = "linear-gradient(#151515, " + teste4 + ")";
+            faceLeft.style.background = "linear-gradient(#151515, " + teste4 + ")";
+            faceTop.style.background = "linear-gradient(#151515, #151515)";
+            faceBottom.style.background = "linear-gradient(" + teste4 + "," + teste4 +")";
+        }
+
+        function mudarCor5(teste5) {
+            faceFront.style.background = "linear-gradient(#151515, " + teste5 + ")";
+            faceRight.style.background = "linear-gradient(#151515, " + teste5 + ")";
+            faceBack.style.background = "linear-gradient(#151515, " + teste5 + ")";
+            faceLeft.style.background = "linear-gradient(#151515, " + teste5 + ")";
+            faceTop.style.background = "linear-gradient(#151515, #151515)";
+            faceBottom.style.background = "linear-gradient(" + teste5 + "," + teste5 + ")";
+        }
+        
+        function iniciar() {
+            faceFront.style.background = "linear-gradient(#151515, #0a328f)";
+            faceRight.style.background = "linear-gradient(#151515, #0a328f)";
+            faceBack.style.background = "linear-gradient(#151515, #0a328f)";
+            faceLeft.style.background = "linear-gradient(#151515, #0a328f)";
+            faceTop.style.background = "linear-gradient(#151515, #151515)";
+            faceBottom.style.background = "linear-gradient(#0a328f, #0a328f)";
+
+            botao1.addEventListener("click", function() {
+                mudarCor("#0a328f");
+            });
+        
+            botao2.addEventListener("click", function() {
+                mudarCor2("#00b2f0");
+            });
+        
+            botao3.addEventListener("click", function() {
+                mudarCor3("#666");
+            });
+
+            botao4.addEventListener("click", function() {
+                mudarCor4("#fff");
+            });
+
+            botao5.addEventListener("click", function() {
+                mudarCor4("#000");
+            });
+        }
+        
+        window.onload = iniciar;
+    </script>
 </body>
 </html>

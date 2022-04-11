@@ -627,10 +627,6 @@ div.menu h1{
     transition: transform 1s;
   }
 
-  .radio-group {
-    
-  }
-
  label {
     box-sizing: border-box;
     padding: 0.5em 2em;
@@ -648,7 +644,7 @@ div.menu h1{
 
 
   
-  .box.show-front  { transform: translateZ( -50px) rotateY(   0deg); }
+  .box.show-front  { transform: translateZ( -50px) rotateY(   0deg) rotateX( 0deg); }
   .box.show-back   { transform: translateZ( -50px) rotateY(-180deg); }
   .box.show-right  { transform: translateZ(-150px) rotateY( -40deg); }
   .box.show-left   { transform: translateZ(-150px) rotateY(  40deg); }
@@ -672,12 +668,18 @@ div.menu h1{
     line-height: 150px;
   }
 
-  .box__face--back{
+  .box__face--back {
       line-height: 10px;
-      font-size: 4px;
       padding: 10px;
       padding-top: 50px;
       text-align: justify;
+  }
+
+  .box__face--back p {
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    top: 35px;
   }
 
   .box__face--back img {
@@ -713,13 +715,15 @@ div.menu h1{
       top: 50px;
   }
   
+  /*
   .box__face--front  { background: linear-gradient(#151515,#0a328f); }
   .box__face--right  { background: linear-gradient(#151515,#0a328f); }
   .box__face--back   { background: linear-gradient(#151515,#0a328f); }
   .box__face--left   { background: linear-gradient(#151515,#0a328f); }
   .box__face--top    { background: linear-gradient(#151515,#151515); }
   .box__face--bottom { background: linear-gradient(#0a328f,#0a328f); }
-  
+  */
+
   .box__face--front  { transform: rotateY(  0deg) translateZ( 50px); }
   .box__face--back   { transform: rotateY(180deg) translateZ( 50px); }
   
@@ -730,6 +734,60 @@ div.menu h1{
   .box__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
   
   label { margin-right: 10px; }
+
+  .cores {
+      display: grid;
+  }
+
+#botao1 {
+    border: none;
+    background-color: #0a328f;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#botao2 {
+    border: none;
+    background-color: #00b2f0;
+    width: 150px;
+    height: 40px;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#botao3 {
+    border: none;
+    background-color: #666;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#botao4 {
+    border: none;
+    background-color: #fff;
+    width: 150px;
+    height: 40px;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#botao5 {
+    border: none;
+    background-color: #000;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
 
 
 
